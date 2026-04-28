@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lists, Links, and Images</title>
+    <style>
+        a:link { color: blue; }
+        a:visited { color: purple; }
+        a:hover { color: orange; } 
+        a:active { color: red; }
+        
+        body { font-family: sans-serif; line-height: 1.6; }
+        .section { margin-bottom: 20px; padding: 10px; border-bottom: 1px solid #ccc; }
+        .nav-list { list-style-type: square; }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h2>Organized Navigation (Lists)</h2>
+        <p>Lists can be used to organize hyperlinks.</p>
+        <ul class="nav-list">
+            <li><a href="http://google.com">Absolute Link: Google</a></li>
+            <li><a href="../index.html">Relative Link: Olivia's Home Page</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">Target Blank: W3Schools</a></li>
+        </ul>
+
+        <p>Steps for Creating an Image Map:</p>
+        <ol>
+            <li>Add the <code>usemap</code> attribute to the <code>&lt;img&gt;</code> tag.</li>
+            <li>Define the <code>&lt;map&gt;</code> with a specific <code>name</code>.</li>
+            <li>Add <code>&lt;area&gt;</code> tags to define "hot spot" coordinates and shapes.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Hyperlinks</h2>
+        <p>Absolute Link: <a href="http://google.com">Google</a></p>
+        <p>Relative Link (Parent Directory): <a href="../index.html">Olivia's Home Page</a></p>
+        <p>Target Blank: <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a></p>
+    </div>
+
+    <div class="section">
+        <h2>Images (Online Sources)</h2>
+        <p>Standard Image from a Web Address:</p>
+        <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" style="width:200px;height:auto;">
+
+        <p>Image as a Link:</p>
+        <a href="https://www.w3schools.com/html/">
+            <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Chania" style="width:100px;height:100px;border:0;">
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>Image Map</h2>
+        <p>Click the "hot spots" on the shapes below:</p>
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" href="https://www.google.com" alt="Computer" title="Go to Google">
+            <area shape="circle" coords="337,300,44" href="https://www.w3schools.com" alt="Coffee" title="Go to W3Schools">
+        </map>
+    </div>
+
+</body>
+</html>

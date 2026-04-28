@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia and Forms</title>
+</head>
+<body>
+    <form>
+        <h1>Forms</h1>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+        <br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+    </form>
+
+    <br>
+
+    <form action="process.php" method="POST">
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <form action="/action_page.php" method="POST">
+        <label>First name:</label>
+        <input type="text" name="firstname" value="Nicole">
+        <br>
+        <label>Last name:</label>
+        <input type="text" name="lastname" value="Pasqual">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <form>
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+    </form>
+</body>
+</html>

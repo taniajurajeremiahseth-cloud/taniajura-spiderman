@@ -1,0 +1,20 @@
+.sampDiv {
+            text-align: center; 
+            color: blue;
+        }
+        p {
+            text-align: center;
+            color: red;
+        }
+        #xiaoli {
+            text-align: center;
+            color: green;
+        }
+        .savannah {
+            text-align: right;
+            color: blueviolet;
+        }
+        h2, h3, p {
+            text-align: center;
+            color: maroon;
+        }

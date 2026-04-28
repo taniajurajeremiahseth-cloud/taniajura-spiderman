@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists - Table of Contents</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 40px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        ol, ul {
+            list-style-position: outside;
+            padding-left: 40px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 24px;
+        }
+
+        ol.main-list {
+            list-style-type: upper-alpha;
+        }
+
+        ol.roman-upper {
+            list-style-type: upper-roman;
+        }
+
+        ol.roman-lower {
+            list-style-type: lower-roman;
+        }
+
+        ul.squares {
+            list-style-type: square;
+        }
+
+        ul.bullets {
+            list-style-type: disc;
+        }
+
+        .indent-1 { padding-left: 60px; }
+        .indent-2 { padding-left: 40px; }
+    </style>
+</head>
+<body>
+
+    <h1>LISTS</h1>
+
+    <ol class="main-list">
+        <li>Main Topic 1</li>
+        <li>Main Topic 2
+            <ol class="roman-upper">
+                <li>Topic 1</li>
+                <li>Topic 2
+                    <ul class="squares">
+                        <li>Subtopic 1</li>
+                        <li>Subtopic 2</li>
+                    </ul>
+                </li>
+                <li>Topic 3
+                    <ol class="roman-lower">
+                        <li>Subtopic 1</li>
+                        <li>Subtopic 2
+                            <ul class="bullets">
+                                <li>Mini Topic 1</li>
+                                <li>Mini Topic 2</li>
+                            </ul>
+                        </li>
+                        <li>Subtopic 3</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Main Topic 3</li>
+    </ol>
+
+</body>
+</html>
